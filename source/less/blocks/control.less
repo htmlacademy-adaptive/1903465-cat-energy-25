@@ -1,0 +1,27 @@
+// control
+
+.control {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-left: 45px;
+}
+
+.control__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.control__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @special_dark-grey-2;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
