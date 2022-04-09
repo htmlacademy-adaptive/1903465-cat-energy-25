@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("/source/fonts/oswaldregular.woff2") format("woff2"), url("/source/fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/source/fonts/oswaldmedium.woff2") format("woff2"), url("/source/fonts/oswaldmedium.woff") format(woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.page {
+  box-sizing: border-box;
+}
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+.page a {
+  text-decoration: none;
+}
+.main-header {
+  display: flex;
+  width: 280px;
+}
+.main-header__logo {
+  margin-right: 65px;
+}
+.main-header__logo-image {
+  margin-right: 57px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.promo {
+  min-width: 320px;
+  min-height: 480px;
+}
+.promo__wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-size: 320px 302px;
+}
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.promo__subtitle {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.promo__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.advantages__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.description {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example {
+  background-color: #eaeaea;
+}
+.example__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+}
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+.example__text {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.slider-comparison {
+  background-color: #eaeaea;
+}
+.range-wrapper__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.contacts {
+  padding-top: 25px;
+}
+.contacts--dark {
+  background-color: #f2f2f2;
+}
+.contacts__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.contacts__description {
+  line-height: 20px;
+}
+.contacts-wrapper {
+  display: flex;
+}
+.main-footer {
+  padding: 39px 19px 22px;
+  background-color: #f2f2f2;
+}
+.main-footer__logo {
+  display: block;
+  margin-bottom: 32px;
+}
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.social-list__item {
+  margin-right: 24px;
+}
+.catalog-wrapper {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.catalog__title {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.product-card__features-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.product-card__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.product-card__button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #68b738;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.product-card__title--show-all {
+  color: #111111;
+}
+.product-card__button--show-all {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+.more-goods {
+  padding-top: 25px;
+  padding-bottom: 19px;
+  margin-bottom: 35px;
+}
+.more-goods__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.more-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.more-goods__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+.more-goods__item-title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.more-goods__package {
+  display: inline-block;
+  margin: 0;
+  margin-right: 125px;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.more-goods__price {
+  display: inline-block;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.more-goods__button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #68b738;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.gift {
+  min-height: 290px;
+  margin-bottom: 35px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/img/gift-background-image.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.gift__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.main-form {
+  background-color: #ffffff;
+}
+.form-header__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+.form-order__text {
+  margin: 0;
+  text-transform: uppercase;
+}
+.form-field__label {
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
+}
+.form-field {
+  display: block;
+}
+.form-field__control {
+  padding: 10px;
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
+}
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.filter__item {
+  padding-bottom: 19px;
+}
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+.control {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-left: 45px;
+}
+.control__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+.control__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+.filter {
+  border: none;
+}
+.filter__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+.button-submit {
+  display: block;
+  padding: 10px 20px;
+  background-color: #68b738;
+  border-color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
