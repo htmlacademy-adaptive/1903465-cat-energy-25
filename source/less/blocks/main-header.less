@@ -1,10 +1,36 @@
 .main-header {
-  display: flex;
-  width: 280px;
+  // display: flex;
+  // flex-direction: column;
+  // width: 280px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-header__logo {
+  height: 67px;
   margin-right: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    height: 78px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    height: 112px;
+  }
 }
 
 .main-header__logo-image {

@@ -8,3 +8,29 @@
   font-size: 24px;
   line-height: 26px;
 }
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter__item {
+  padding-bottom: 19px;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(104, 183, 56);
+  border-radius: 50%;
+  content: "";
+}
+

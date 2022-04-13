@@ -1,7 +1,13 @@
 // advantages
 
+.advantages {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
 .advantages__title {
   margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
 }
@@ -14,4 +20,16 @@
 
 .advantages__item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .advantages li {
+    width: 230px;
+  }
 }

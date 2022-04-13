@@ -1,13 +1,18 @@
 // promo
 
 .promo {
-  min-width: 320px;
-  min-height: 480px;
+  display: block;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  // min-width: 320px;
+  // min-height: 480px;
 }
 
 .promo__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
-  background-size: 320px 302px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85))  url("../img/index-background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
 }
 
 .promo__title {
@@ -24,6 +29,8 @@
 }
 
 .promo__subtitle {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 24px;
   line-height: 37px;
   color: #000000;
@@ -35,4 +42,19 @@
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.promo__item {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.promo__description {
+  margin: 0;
 }
