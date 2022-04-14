@@ -2,8 +2,13 @@
 
 .history {
   background-color: #eaeaea;
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
+}
+
+.history__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 25px;
 }
 
 .history__title {
@@ -22,8 +27,43 @@
   line-height: 12px;
 }
 
+.history__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
 .history__text {
-  font-size: 14px;
+  margin: 0;
   line-height: 20px;
-  text-transform: uppercase;
+  // text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .history__wrapper {
+    width: 708px;
+    padding: 0 30px;
+    padding-top: 43px;
+  }
+
+  .history__list {
+    justify-content: start;
+  }
+
+  .history__item {
+    width: 162px;
+    margin-right: 42px;
+  }
+
+  .history__text {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .history__wrapper {
+    width: 1440px;
+  }
 }
