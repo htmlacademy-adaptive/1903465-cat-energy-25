@@ -26,8 +26,12 @@
 }
 
 .contacts__map-wrapper {
-  width: 320px;
   margin: 0 auto;
+  min-height: 362px;
+  background-image: url(/img/location-mobile.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contacts-map {
@@ -40,11 +44,17 @@
     margin: 0 auto;
     padding: 0 30px;
   }
+
+  .contacts__map-wrapper {
+    min-height: 400px;
+    background-image: url(/img/location-tablet.jpg);
+  }
 }
 
-@media (min-width: @desktop-width)  {
+@media (min-width: @desktop-width) {
   .contacts {
     position: relative;
+    width: 1440px;
   }
 
   .contacts__wrapper {
@@ -56,8 +66,7 @@
   }
 
   .contacts__map-wrapper {
-    width: 1440px;
-    height: 400px;
-    margin: 0 auto;
+    min-height: 400px;
+    background-image: url(/img/location-desktop.jpg);
   }
 }
