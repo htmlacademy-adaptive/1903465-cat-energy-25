@@ -1,11 +1,15 @@
 // gift
 
-.gift {
+.gift__wrapper {
+  width: 280px;
   min-height: 290px;
+  margin: 0 auto;
   margin-bottom: 35px;
+  padding: 0 20px;
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("/img/gift-background-image.png");
   background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -16,4 +20,18 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .gift__wrapper {
+    width: 708px;
+    min-height: 200px;
+    margin-bottom: 76px;
+    padding: 0 30px;
+  }
+
+  .gift__text {
+    text-align: right;
+  }
 }

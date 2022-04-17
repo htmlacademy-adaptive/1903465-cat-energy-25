@@ -1,12 +1,42 @@
 // form-order
 
-.form-order__text {
-  margin: 0;
-  text-transform: uppercase;
+.form-order__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
 }
 
-.form-field__label {
+.form-order__input {
+  padding: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 18px;
   color: @special_dark-grey;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-order__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-order {
+    display: grid;
+    grid-template-columns: repeat(2, 569px);
+    column-gap: 80px;
+  }
+
+  .form-order__label {
+    display: block;
+  }
 }
