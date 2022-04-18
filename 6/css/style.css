@@ -849,6 +849,8 @@
 @media (min-width: 1440px) {
   .main-form__wrapper {
     width: 1220px;
+    margin: 0;
+    padding: 0 110px;
   }
   .main-form__title {
     margin: 0;
@@ -863,7 +865,15 @@
     margin-bottom: 66px;
   }
 }
+.form-order__filter {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 .form-order__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -880,6 +890,7 @@
 }
 @media (min-width: 768px) {
   .form-order__label {
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -890,9 +901,14 @@
 }
 @media (min-width: 1440px) {
   .form-order {
-    display: grid;
-    grid-template-columns: repeat(2, 569px);
-    column-gap: 80px;
+    width: 1220px;
+  }
+  .form-order__column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-order__filter {
+    width: 569px;
   }
   .form-order__label {
     display: block;
@@ -929,9 +945,12 @@
   list-style-type: none;
 }
 .filter__item {
-  padding-bottom: 19px;
+  margin-bottom: 19px;
 }
 @media (min-width: 768px) {
+  .filter {
+    margin-bottom: 65px;
+  }
   .filter__title {
     font-size: 36px;
     line-height: 36px;
@@ -939,6 +958,26 @@
   }
   .filter__list {
     margin-bottom: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 67px;
+  }
+  .filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .filter__item {
+    margin: 0;
+    width: 221px;
+  }
+  .filter__item:not(:last-child) {
+    margin-right: 104px;
   }
 }
 .control {
@@ -997,7 +1036,14 @@
 }
 @media (min-width: 768px) {
   .button-submit {
+    display: inline-block;
+    margin-right: 61px;
     font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .button-submit {
+    margin-bottom: 81px;
   }
 }
 .main-inner__wrapper {
