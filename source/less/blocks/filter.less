@@ -20,10 +20,14 @@
 }
 
 .filter__item {
-  padding-bottom: 19px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
+  .filter {
+    margin-bottom: 65px;
+  }
+
   .filter__title {
     font-size: 36px;
     line-height: 36px;
@@ -32,5 +36,29 @@
 
   .filter__list {
     margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 67px;
+  }
+
+  .filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .filter__item {
+    margin: 0;
+    width: 221px;
+  }
+
+  .filter__item:not(:last-child) {
+    margin-right: 104px;
   }
 }

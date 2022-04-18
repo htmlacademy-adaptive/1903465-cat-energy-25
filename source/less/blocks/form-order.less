@@ -1,6 +1,15 @@
 // form-order
 
+.form-order__filter {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .form-order__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 18px;
   color: @special_dark-grey;
@@ -19,6 +28,7 @@
 
 @media (min-width: @tablet-width) {
   .form-order__label {
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -31,9 +41,20 @@
 
 @media (min-width: @desktop-width) {
   .form-order {
-    display: grid;
-    grid-template-columns: repeat(2, 569px);
-    column-gap: 80px;
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 1220px;
+    // grid-template-columns: repeat(2, 569px);
+    // column-gap: 80px;
+  }
+
+  .form-order__column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-order__filter {
+    width: 569px;
   }
 
   .form-order__label {
