@@ -17,6 +17,7 @@
   padding-right: 20px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #111111;
 }
@@ -28,8 +29,8 @@
 .contacts__map-wrapper {
   margin: 0 auto;
   min-height: 362px;
-  background-image: url(/img/location-mobile.jpg);
-  background-size: auto;
+  background-image: url("/img/location-mobile.jpg");
+  background-size: 320px 362px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -41,13 +42,18 @@
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     width: 706px;
-    margin: 0 auto;
-    padding: 0 30px;
+    padding: 55px 30px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .contacts__map-wrapper {
     min-height: 400px;
-    background-image: url(/img/location-tablet.jpg);
+    background-image: url("/img/location-tablet.jpg");
+    background-size: 768px 400px;
   }
 }
 
@@ -63,10 +69,14 @@
     left: 110px;
     width: 565px;
     height: 198px;
+    background-color: #ffffff;
+    box-sizing: border-box;
   }
 
   .contacts__map-wrapper {
     min-height: 400px;
-    background-image: url(/img/location-desktop.jpg);
+    background-image: url("/img/location-desktop.jpg");
+    background-size: 1440px 400px;
+    background-position: center;
   }
 }

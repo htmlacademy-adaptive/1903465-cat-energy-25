@@ -1,12 +1,63 @@
 // form-order
 
-.form-order__text {
+.form-order__filter {
   margin: 0;
-  text-transform: uppercase;
+  padding: 0;
+  border: none;
 }
 
-.form-field__label {
+.form-order__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
   font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+}
+
+.form-order__input {
+  padding: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   color: @special_dark-grey;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-order__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-order {
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 1220px;
+    // grid-template-columns: repeat(2, 569px);
+    // column-gap: 80px;
+  }
+
+  .form-order__column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-order__filter {
+    width: 569px;
+  }
+
+  .form-order__label {
+    display: block;
+  }
 }

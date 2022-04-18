@@ -1,8 +1,9 @@
 // more-goods
 
-.more-goods {
-  padding-top: 25px;
-  padding-bottom: 19px;
+.more-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 25px 20px 19px;
   margin-bottom: 35px;
 }
 
@@ -11,6 +12,7 @@
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .more-goods__list {
@@ -31,6 +33,7 @@
   margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: @special_dark-grey-2;
   text-transform: uppercase;
 }
@@ -63,4 +66,42 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .more-goods__wrapper {
+    width: 708px;
+    margin-bottom: 69px;
+    padding: 68px 30px;
+  }
+
+  .more-goods__title {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .more-goods__item {
+    padding: 28px 38px;
+  }
+
+  .more-goods__item-title {
+    display: inline-block;
+    margin: 0;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-goods__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .more-goods__button {
+    display: inline-block;
+    width: 244px;
+  }
 }

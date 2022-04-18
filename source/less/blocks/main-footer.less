@@ -12,25 +12,41 @@
 
 .main-footer__logo {
   display: block;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.main-footer__logo-image {
+  display: block;
 }
 
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     width: 708px;
     padding: 58px 30px 55px;
+  }
+
+  .main-footer__logo {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    width: 163px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer__wrapper {
-    width: 1360px;
-    padding: 57px 40px;
+    width: 1220px;
+    padding: 57px 110px;
   }
 }
