@@ -6,13 +6,9 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
   width: 44px;
   height: 36px;
   cursor: pointer;
-  // border: none;
 
   &:hover {
     opacity: 0.8;
@@ -59,9 +55,9 @@
   position: absolute;
   top: 66px;
   right: 0;
-  left: 0;
+  width: 280px;
   z-index: 10;
-  min-height: 80vh;
+  background-color: #ffffff;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -75,36 +71,6 @@
 
 .main-nav--nojs .main-nav__item {
   display: block;
-}
-
-.main-nav--opened .main-nav__toggle {
-  top: 10px;
-  right: 20px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 8px;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(#000000, 30%);
-  }
 }
 
 .main-nav__list {
