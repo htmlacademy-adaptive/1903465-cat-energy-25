@@ -5,22 +5,28 @@
   min-height: 290px;
   margin: 0 auto;
   margin-bottom: 35px;
-  padding: 0 20px;
+  padding: 59px 20px 43px;
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("/img/gift-background-image.png");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 .gift__text {
   margin: 0;
   padding: 0;
+  padding-top: 128px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  background-image: url("/img/icon-gift-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-position: 50% 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,10 +34,17 @@
     width: 708px;
     min-height: 200px;
     margin-bottom: 76px;
-    padding: 0 30px;
+    // padding: 0 30px;
+    padding: 57px 30px 60px;
   }
 
   .gift__text {
-    text-align: right;
+    // text-align: right;
+    padding: 10px;
+    padding-left: 345px;
+    background-image: url("/img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 83px;
+    background-position: 77px 0;
   }
 }
