@@ -350,7 +350,7 @@
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
-  background-image: url("/img/icon-arrow-mobile.svg");
+  background-image: url("../img/icon-arrow-mobile.svg");
   background-repeat: no-repeat;
   background-position: 61% 47%;
 }
@@ -366,7 +366,7 @@
   background-color: #f2f2f2;
 }
 .program__item--slim::before {
-  content: url("/img/cat-slim-mobile.svg");
+  content: url("../img/cat-slim-mobile.svg");
   display: inline-block;
   background-color: #68b738;
   width: 50px;
@@ -374,7 +374,7 @@
   border-radius: 50%;
 }
 .program__item--pro::before {
-  content: url("/img/cat-pro-mobile.svg");
+  content: url("../img/cat-pro-mobile.svg");
   display: inline-block;
   background-color: #68b738;
   width: 50px;
@@ -438,7 +438,7 @@
   margin-bottom: 24px;
 }
 .advantages__item--leaf::before {
-  content: url("/img/advantages_icon_leaf.svg");
+  content: url("../img/advantages_icon_leaf.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -447,7 +447,7 @@
   background-color: #68b738;
 }
 .advantages__item--tub::after {
-  content: url("/img/advantages_icon_tub.svg");
+  content: url("../img/advantages_icon_tub.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -456,7 +456,7 @@
   background-color: #68b738;
 }
 .advantages__item--eat::after {
-  content: url("/img/advantages_icon_eat.svg");
+  content: url("../img/advantages_icon_eat.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -465,7 +465,7 @@
   background-color: #68b738;
 }
 .advantages__item--clock::after {
-  content: url("/img/advantages_icon_clock.svg");
+  content: url("../img/advantages_icon_clock.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -690,7 +690,7 @@
 .contacts__map-wrapper {
   display: flex;
   margin: auto;
-  background-image: url("/img/location-mobile.jpg");
+  background-image: url("../img/location-mobile.jpg");
   background-size: 320px 362px;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -858,7 +858,7 @@
 .product-card__title--show-all {
   padding-top: 53px;
   color: #111111;
-  background-image: url("/img/icon-plus-mobile.svg");
+  background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: 50% 0;
@@ -887,7 +887,7 @@
   }
   .product-card__title--show-all {
     padding-top: 109px;
-    background-image: url("/img/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
     background-size: 60px 60px;
     background-position: 50% 0;
   }
@@ -1001,7 +1001,7 @@
   margin-bottom: 35px;
   padding: 59px 20px 43px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/img/gift-background-image.png");
+  background-image: url("../img/gift-background-image.png");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -1016,7 +1016,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  background-image: url("/img/icon-gift-mobile.svg");
+  background-image: url("../img/icon-gift-mobile.svg");
   background-repeat: no-repeat;
   background-size: 78px 80px;
   background-position: 50% 0;
@@ -1031,7 +1031,7 @@
   .gift__text {
     padding: 10px;
     padding-left: 345px;
-    background-image: url("/img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: 80px 83px;
     background-position: 77px 0;
