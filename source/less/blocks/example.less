@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   padding: 0 20px;
   padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -33,6 +34,13 @@
   margin-bottom: 20px;
 }
 
+.example__item {
+  width: 124px;
+  padding: 14px 25px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .example__number {
   margin-bottom: 7px;
   font-size: 24px;
@@ -40,7 +48,7 @@
 }
 
 .example__description {
-  margin-bottom: 20px;
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
 }
@@ -52,21 +60,8 @@
   text-transform: uppercase;
 }
 
-.slider-comparison__image img {
-  display: block;
-  margin: 0 auto;
-}
-
-.range-wrapper__label {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.range-wrapper__text {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.example__slider {
+  padding-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -74,6 +69,7 @@
     width: 708px;
     padding: 0 30px;
     padding-top: 43px;
+    // padding-bottom: 56px;
   }
 
   .example__title {
@@ -96,6 +92,7 @@
 
   .example__stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -106,6 +103,7 @@
   .example__item {
     width: 162px;
     margin-right: 42px;
+    padding: 0;
   }
 
   .example__number {
@@ -119,18 +117,27 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .example__slider {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    // width: 1220px;
+    justify-content: space-around;
     background-color: @basic_grey;
   }
 
   .example__wrapper {
     width: 436px;
     margin: 0;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .example__title {
@@ -138,9 +145,19 @@
   }
 
   .example__text {
+    width: 436px;
+    padding: 0;
     margin-bottom: 69px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .example__list {
+    margin-bottom: 47px;
+  }
+
+  .example__description {
+    margin: 0;
   }
 
   .example__item {
