@@ -8,40 +8,41 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
-        <img class="main-header__logo-footer-image" src="img/logotype-mobile.svg" width="101" height="18" alt="Логотип CAT ENERGY.">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
+          <img class="main-header__logo-footer-image" src="img/logotype-mobile.svg" width="101" height="18" alt="Логотип CAT ENERGY.">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин CAT ENERGY - функциональное питание для котов</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <a class="promo__button button" href="form.html">Подобрать программу</a>
-          <img class="promo__image" src="img/index-mobile.png" width="280" height="270" alt="Питание для котов со вкусом курицы.">
+          <div class="promo__info-wrapper">
+            <h2 class="promo__title">Функциональное питание для котов</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <a class="promo__button button" href="form.html">Подобрать программу</a>
+            <img class="promo__image" src="img/index-mobile.png" width="280" height="270" alt="Питание для котов со вкусом курицы.">
+          </div>
         </div>
-        <!-- <div class="promo__button-wrapper">
-          <button class="promo__button button">Подобрать программу</button>
-        </div> -->
       </section>
       <section class="program">
         <div class="program__wrapper">
@@ -82,26 +83,28 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="visually-hidden">Истории интернет-магазина Cat Energy</h2>
-          <p class="example__title">Живой пример</p>
-          <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__stats">
-            <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__number">5 КГ</dt>
-                <dd class="example__description description">снижение веса</dd>
-              </div>
-              <div class="example__item">
-                <dt class="example__number">60 ДНЕЙ</dt>
-                <dd class="example__description description">затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="example__result">Затраты на питание: 15 000 РУБ. </p>
+          <div class="example__history-wrapper">
+            <h2 class="visually-hidden">Истории интернет-магазина Cat Energy</h2>
+            <p class="example__title">Живой пример</p>
+            <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__stats">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__number">5 КГ</dt>
+                  <dd class="example__description description">снижение веса</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 ДНЕЙ</dt>
+                  <dd class="example__description description">затрачено времени</dd>
+                </div>
+              </dl>
+              <p class="example__result">Затраты на питание: 15 000 РУБ. </p>
+            </div>
           </div>
-        </div>
-        <div class="example__slider slider-comparison">
-          <div class="slider-comparison__image">
-            <img src="img/slider-before-mobile.png" width="280" height="277" alt="Кот до похудения.">
+
+          <div class="example__slider-wrapper slider-comparison">
+            <div class="slider-comparison__image">
+              <img src="img/slider-before-mobile.png" width="280" height="277" alt="Кот до похудения.">
           </div>
           <div class="slider-comparison__image">
             <img src="img/slider-after-mobile.png" width="243" height="232" alt="Кот после похудения.">
@@ -118,17 +121,19 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__wrapper">
-          <b class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
-          <p class="contacts__description description">ул. Большая<br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map-wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            width="766"
-            height="362"
-            allowfullscreen
-            title="Офис компании по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
-          </iframe>
+          <div class="contacts__info-wrapper">
+            <b class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
+            <p class="contacts__description description">ул. Большая<br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+              width="100%"
+              height="362"
+              allowfullscreen
+              title="Офис компании по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+            </iframe>
+          </div>
         </div>
       </section>
     </main>

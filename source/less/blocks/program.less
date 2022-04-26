@@ -9,8 +9,10 @@
 .program__subtitle {
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 69px;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
@@ -36,28 +38,34 @@
 }
 
 .program__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 22px;
   box-sizing: border-box;
   background-color: @basic_grey;
 }
 
-.program__item--slim::before {
-  content: url("../img/cat-slim-mobile.svg");
-  display: inline-block;
+.program__item::before {
+  position: absolute;
+  content: "";
   background-color: @basic_green;
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-.program__item--pro::before {
+.program__item--slim::after {
+  position: absolute;
+  content: url("../img/cat-slim-mobile.svg");
+  top: 20px;
+  left: 28px;
+}
+
+.program__item--pro::after {
+  position: absolute;
   content: url("../img/cat-pro-mobile.svg");
-  display: inline-block;
-  background-color: @basic_green;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  top: 28px;
+  left: 10px;
 }
 
 .program__description {
@@ -70,16 +78,67 @@
     width: 708px;
     margin: 0 auto;
     padding: 0 30px;
+    right: 62px;
+    top: 92px;
+  }
+
+  .program__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    // padding-left: 214px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program__item {
+    position: relative;
+    width: 708px;
+    min-height: 372px;
+    padding: 0;
+    padding-top: 77px;
+    padding-right: 316px;
+    padding-left: 52px;
+    margin-bottom: 30px;
+  }
+
+  .program__item::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 81px;
+    right: 62px;
+  }
+
+  .program__item--slim::after {
+    content: url("../img/cat-slim-tablet.svg");
+    top: 81px;
+    right: 80px;
+  }
+
+  .program__item--pro::after {
+    content: url("../img/cat-pro-tablet.svg");
+    top: 81px;
+    right: 80px;
   }
 
   .program__description {
+    // width: 340px;
     margin-bottom: 48px;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program__wrapper {
     width: 1220px;
+    padding: 0;
+  }
+
+  .program__subtitle {
+    margin: 0;
+    margin-bottom: 73px;
+    padding-left: 214px;
   }
 
   .program__list {
@@ -88,14 +147,40 @@
   }
 
   .program__item {
+    position: relative;
     width: 570px;
+    padding: 0;
+    padding-top: 77px;
+    padding-left: 52px;
   }
 
   .program__item:not(:last-child) {
     margin-right: 80px;
   }
 
+  .program__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program__item--slim::after {
+    position: absolute;
+    content: url("../img/cat-slim-desktop.svg");
+    top: 44px;
+    left: 73px;
+  }
+
+  .program__item--pro::after {
+    position: absolute;
+    content: url("../img/cat-pro-desktop.svg");
+    top: 77px;
+    left: 37px;
+  }
+
   .program__description {
-    margin-bottom: 48px;
+    width: 467px;
+    margin-bottom: 23px;
   }
 }
