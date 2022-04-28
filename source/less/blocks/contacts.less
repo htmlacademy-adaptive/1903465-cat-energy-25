@@ -5,8 +5,15 @@
 }
 
 .contacts__wrapper {
-  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    // width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    // width: 1440px;
+  }
 }
 
 .contacts__info-wrapper {
@@ -32,24 +39,21 @@
 
 .contacts__map-wrapper {
   display: flex;
-  width: 320px;
+  width: 100%;
   margin: auto;
-  background-image: url("../img/location-mobile.jpg");
-  background-size: 320px 362px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  // background-image: url("../img/location-mobile.jpg");
+  // background-size: 320px 362px;
+  // background-position: 0 0;
+  // background-repeat: no-repeat;
 }
 
 .contacts__map-wrapper iframe {
   border: none;
   display: block;
+  height: 362px;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts__wrapper {
-    width: 768px;
-  }
-
   .contacts__info-wrapper {
     width: 708px;
     padding: 55px 30px;
@@ -59,6 +63,10 @@
     width: 172px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .contacts__map-wrapper iframe {
+    height: 400px;
   }
 
   // .contacts__map-wrapper {
@@ -71,10 +79,6 @@
 @media (min-width: @desktop-width) {
   .contacts {
     position: relative;
-    width: 1440px;
-  }
-
-  .contacts__wrapper {
     width: 1440px;
   }
 
@@ -92,6 +96,10 @@
 
   .contacts__title {
     width: 163px;
+  }
+
+  .contacts__map-wrapper iframe {
+    height: 362px;
   }
 
   // .contacts__map-wrapper {
