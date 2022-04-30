@@ -11,8 +11,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
-        <img class="main-header__logo-footer-image" src="img/logotype-mobile.svg" width="101" height="18" alt="Логотип CAT ENERGY.">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -249,40 +252,40 @@
         </ul>
       </section>
     </div>
-    <section class="more-goods">
-      <h2 class="more-goods__title">Дополнительные товары</h2>
-      <div class="more-goods__wrapper">
-        <div class="more-goods-list-wrapper">
-          <ul class="more-goods__list">
-            <li class="more-goods__item">
-              <h3 class="more-goods__item-title">Сахарозаменитель</h3>
-              <p class="more-goods__package">1 упаковка (100 г)</p>
-              <p class="more-goods__price">200 Р.</p>
-              <a class="more-goods__button button">заказать</a>
+    <section class="extra-goods">
+      <h2 class="extra-goods__title">Дополнительные товары</h2>
+      <div class="extra-goods__wrapper">
+        <div class="extra-goods-list-wrapper">
+          <ul class="extra-goods__list">
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">Сахарозаменитель</h3>
+              <p class="extra-goods__package">1 упаковка (100 г)</p>
+              <p class="extra-goods__price">200 Р.</p>
+              <a class="extra-goods__button button">заказать</a>
             </li>
-            <li class="more-goods__item">
-              <h3 class="more-goods__item-title">питьевая вода</h3>
-              <p class="more-goods__package">5 литров</p>
-              <p class="more-goods__price">50 Р.</p>
-              <a class="more-goods__button button">заказать</a>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">питьевая вода</h3>
+              <p class="extra-goods__package">5 литров</p>
+              <p class="extra-goods__price">50 Р.</p>
+              <a class="extra-goods__button button">заказать</a>
             </li>
-            <li class="more-goods__item">
-              <h3 class="more-goods__item-title">молоко</h3>
-              <p class="more-goods__package">1 литр</p>
-              <p class="more-goods__price">100 Р.</p>
-              <a class="more-goods__button button">заказать</a>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">молоко</h3>
+              <p class="extra-goods__package">1 литр</p>
+              <p class="extra-goods__price">100 Р.</p>
+              <a class="extra-goods__button button">заказать</a>
             </li>
-            <li class="more-goods__item">
-              <h3 class="more-goods__item-title">витамины</h3>
-              <p class="more-goods__package">1 упаковка (30 г)</p>
-              <p class="more-goods__price">300 Р.</p>
-              <a class="more-goods__button button">заказать</a>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">витамины</h3>
+              <p class="extra-goods__package">1 упаковка (30 г)</p>
+              <p class="extra-goods__price">300 Р.</p>
+              <a class="extra-goods__button button">заказать</a>
             </li>
           </ul>
         </div>
-        <div class="more-goods__gift-wrapper">
+        <div class="extra-goods__gift-wrapper">
           <h2 class="visually-hidden">Подарок для клиентов.</h2>
-          <p class="more-goods__gift-text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+          <p class="extra-goods__gift-text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
         </div>
       </div>
     </section>

@@ -10,8 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
-          <img class="main-header__logo-footer-image" src="img/logotype-mobile.svg" width="101" height="18" alt="Логотип CAT ENERGY.">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип интернет-магазин CAT ENERGY.">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -40,7 +43,11 @@
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
             <a class="promo__button button" href="form.html">Подобрать программу</a>
-            <img class="promo__image" src="img/index-mobile.png" width="280" height="270" alt="Питание для котов со вкусом курицы.">
+            <picture>
+              <source media="(min-width: 1220px)" srcset="img/index-promo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png">
+              <img class="promo__image" src="img/index-promo-mobile.png" srcset="img/index-promo-mobile@2x 2x" width="280" height="270" alt="Питание для котов со вкусом курицы.">
+            </picture>
           </div>
         </div>
       </section>
@@ -103,10 +110,10 @@
           </div>
           <div class="example__slider-wrapper slider-comparison">
             <div class="slider-comparison__image">
-              <img src="img/slider-before-mobile.png" width="280" height="277" alt="Кот до похудения.">
+              <img src="img/slider/slider-before-mobile.png" srcset="img/slider/slider-before-mobile@2x.png 2x" width="280" height="277" alt="Кот до похудения.">
             </div>
-            <div class="slider-comparison__image">
-              <img src="img/slider-after-mobile.png" width="243" height="232" alt="Кот после похудения.">
+            <div class="slider-comparison__image slider-comparison__image--after">
+              <img src="img/slider/slider-after-mobile.png" srcset="img/slider/slider-after-mobile@2x.png 2x" width="243" height="232" alt="Кот после похудения.">
             </div>
           </div>
           <div class="range-wrapper">
