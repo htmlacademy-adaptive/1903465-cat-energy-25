@@ -16,6 +16,21 @@
   border: 1px solid #cdcdcd;
 }
 
+.control:hover .control__mark {
+  border-color: #814b18;
+}
+
+.control__input:disabled + .control__mark {
+  border-color: #242424;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  content: url("../img/checkbox-tick-mobile.svg");
+}
+
 .control__label {
   font-size: 16px;
   text-transform: uppercase;

@@ -41,8 +41,12 @@
   background-color: @basic_green;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin: 0 auto;
+  }
 }
 
 .product-card--show-all {
