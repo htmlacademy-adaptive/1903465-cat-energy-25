@@ -10,14 +10,24 @@
   padding: 39px 20px 22px;
 }
 
-.main-footer__logo {
+.main-footer__logo-link {
   display: block;
   text-align: center;
   margin-bottom: 32px;
 }
 
+.main-footer__logo-link:hover .main-footer__logo-image {
+  opacity: 0.8;
+}
+
+.main-footer__logo-link:active .main-footer__logo-image {
+  opacity: 0.6;
+}
+
+
 .main-footer__logo-image {
-  display: block;
+  // display: block;
+  margin: auto;
 }
 
 .main-footer__copyright {
@@ -30,12 +40,13 @@
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    width: 708px;
+    align-items: baseline;
+    // align-content: center;
+    width: 709px;
     padding: 58px 30px 55px;
   }
 
-  .main-footer__logo {
+  .main-footer__logo-link {
     margin: 0;
   }
 
