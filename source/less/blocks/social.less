@@ -38,11 +38,16 @@
   fill: @special_grey-2;
 }
 
-.social__link:hover .social-icon {
+.social__link:hover .social__icon {
   fill: @basic_green;
 }
 
-.social__link:active .social-icon {
+.social__link:active .social__icon {
   fill: @basic_green;
   fill-opacity: 0.3;
+}
+
+.social-link:focus .social-icon {
+  fill: @basic_green;
+  outline: 3px solid @basic_green;
 }
