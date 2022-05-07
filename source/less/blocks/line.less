@@ -1,0 +1,44 @@
+.line {
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    // width: 706px;
+    top: 13px;
+  }
+}
+
+.line__wrapper {
+  max-width: 1220px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+.line__title {
+  display: inline-block;
+  padding: 0 40px;
+  margin-left: -40px;
+  background-color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

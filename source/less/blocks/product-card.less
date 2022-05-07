@@ -14,6 +14,12 @@
 
 .product-card__desc {
   width: 142px;
+
+  @media (min-width: @tablet-width) {
+    width: 251px;
+    min-height: 157px;
+    margin: 0 auto;
+  }
 }
 
 .product-card__title {
@@ -86,9 +92,11 @@
 
 @media (min-width: @tablet-width) {
   .product-card__wrapper {
-    flex-direction: column;
-    justify-content: space-around;
+    // flex-direction: column;
+    // justify-content: space-around;
+    display: block;
     margin: 0;
+    background-color: @basic_grey;
   }
 
   .product-card {
