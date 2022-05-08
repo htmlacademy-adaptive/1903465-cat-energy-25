@@ -13,6 +13,14 @@
   margin-bottom: 20px;
   padding: 0 20px;
   color: #ffffff;
+
+  // @media (min-width: @tablet-width) {
+  //   display: grid;
+  //   width: 709px;
+  //   min-height: 818px;
+  //   padding: 0 30px;
+  //   background-color: transparent;
+  // }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -52,20 +60,24 @@
 
 .promo__info-wrapper {
   // width: 709px;
-  padding-top: 27px;
+  padding: 27px 15px;
+  padding-bottom: 0;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 62px;
+    margin: 0;
+    padding-top: 43px;
     padding-right: 10px;
     padding-bottom: 20px;
-    padding-left: 87px;
+    padding-left: 86px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 414px;
     margin: 0;
     // padding-left: 80px;
     // padding-top: 114px;
@@ -86,10 +98,11 @@
 }
 
 .promo__slogan {
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 14px;
   line-height: 14px;
-  margin-bottom: 28px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -108,16 +121,26 @@
 
 @media (min-width: @tablet-width) {
   .promo__wrapper {
-    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 709px;
+    min-height: 818px;
     padding: 0 30px;
     background-color: transparent;
   }
 
+  // .promo__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 709px;
+  //   padding: 0 30px;
+  //   background-color: transparent;
+  // }
+
   .promo__title {
     width: 416px;
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 50px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -133,8 +156,19 @@
     color: #000000;
   }
 
+  .promo__image-wrapper {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
   .promo__button {
+    // order: 3;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
     width: 244px;
+    height: 54px;
+    margin-left: 86px;
+    // padding-left: 91px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -147,8 +181,10 @@
 
 @media (min-width: @desktop-width) {
   .promo__wrapper {
-    display: flex;
+    // display: flex;
+    grid-template-columns: 460px 560px;
     width: 1220px;
+    min-height: 499px;
     margin: 0 auto;
     margin-bottom: 247px;
   }
@@ -189,8 +225,19 @@
     margin-bottom: 52px;
   }
 
+  .promo__image-wrapper {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+
   .promo__image {
     width: 525px;
     height: 449px;
+  }
+
+  .promo__button {
+    grid-row: 1 / 2;
+    margin: 0;
+    margin-top: 343px;
   }
 }
