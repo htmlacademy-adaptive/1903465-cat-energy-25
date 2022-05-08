@@ -61,6 +61,14 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 327px;
+  }
 }
 
 .example__slider-wrapper {
@@ -71,6 +79,7 @@
   .example__wrapper {
     width: 708px;
     padding: 0 30px;
+    padding-bottom: 58px;
   }
 
   .example__history-wrapper {
