@@ -7,15 +7,15 @@
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    // width: 708px;
     margin-bottom: 76px;
-    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
+    padding: 0;
     // width: 1220px;
-    padding: 0 110px;
+    // padding: 0 110px;
   }
 }
 
@@ -50,11 +50,16 @@
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    // padding: 28px 38px;
+    // display: flex;
+    // justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 298px 298px 244px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }
 
@@ -85,6 +90,15 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 218px;
+    margin: 0;
+  }
 }
 
 .extra-goods__price {
@@ -94,16 +108,25 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+
+  @media (min-width: @desktop-width) {
+    width: 76px;
+  }
 }
 
 .extra-goods__button {
   display: block;
+  width: 280px;
   padding: 10px 20px;
   background-color: @basic_green;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+  }
 
   @media (min-width: @desktop-width) {
     display: inline-block;
@@ -150,12 +173,14 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     min-height: 289px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin: 0;
+    padding: 0;
     // margin-bottom: 35px;
-    padding: 59px 20px 43px;
+    // padding: 59px 20px 43px;
     background-image: url("../img/catalog/background-extra-goods-desktop.jpg");
     background-size: auto;
-    background-position: center;
+    // background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -184,7 +209,7 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     min-height: 289px;
-    top: 51px;
+    top: 7px;
   }
 }
 
@@ -212,5 +237,12 @@
     padding: 0;
     padding-top: 166px;
     background-position: 50% 38px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra-goods__item-desc {
+    display: inline-block;
+    // margin-left: 80px;
   }
 }
