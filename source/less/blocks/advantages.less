@@ -96,6 +96,7 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-top: 117px;
+    padding-right: 36px;
   }
 }
 
@@ -118,8 +119,19 @@
 
   .advantages__item {
     width: 250px;
-    margin-right: auto;
+    // margin-right: auto;
     padding: 0;
+  }
+
+  .advantages__description::before {
+    content: "1";
+    position: absolute;
+    top: 0;
+    right: 26px;
+    font-size: 280px;
+    line-height: 1;
+    color: @basic_grey;
+    z-index: -1;
   }
 }
 
