@@ -44,8 +44,11 @@
     </div>
   </header>
   <main class="main-container main-form">
-    <h1 class="main-form__title">Подбор программы</h1>
-    <p class="main-form__info">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    <div class="main-form__title-wrapper">
+      <h1 class="main-form__title">Подбор программы</h1>
+      <p class="main-form__info">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    </div>
+
     <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-order__fieldset">
         <legend class="visually-hidden">Контактные данные кота. Выбор программы для похудения или набора массы для котов.</legend>
@@ -88,32 +91,7 @@
           </ul>
         </div>
       </fieldset>
-      <!-- <fieldset class="form-order__fieldset">
-        <legend class="visually-hidden">Выбор программы для похудения или набора массы для котов.</legend>
-        <ul class="form-order__list">
-          <li class="form-order__item">
-            <label class="form-order__label control">
-              <input class="control__input visually-hidden" type="radio" name="product-group" value="weight-loss" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Похудение</span>
-            </label>
-          </li>
-          <li class="form-order__item">
-            <label class="form-order__label control">
-              <input class="control__input visually-hidden" type="radio" name="product-group" value="weight-gain">
-              <span class="control__mark"></span>
-              <span class="control__label">Набор массы</span>
-            </label>
-          </li>
-          <li class="form-order__item">
-            <label class="form-order__label control">
-              <input class="control__input visually-hidden" type="radio" name="product-group" value="your-advice">
-                <span class="control__mark"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset> -->
+
       <fieldset class="form-order__fieldset form-order__fieldset--decoration">
         <legend class="visually-hidden">Контактные данные (владельца кота).</legend>
         <div class="form-order__wrapper">
@@ -176,8 +154,10 @@
             </ul>
           </div>
       </fieldset>
-      <button class="button button-submit" type="submit">Отправить заявку</button>
+      <div class="form-order__button-wrapper">
+        <button class="button button-submit" type="submit">Отправить заявку</button>
       <small>* — Обязательные поля</small>
+      </div>
     </form>
 
     <section class="contacts">

@@ -149,20 +149,42 @@
 .form-order__wrapper {
   position: relative;
   max-width: 1220px;
+  width: 280px;
   margin: 0 auto;
   // padding: 27px 20px 32px;
   padding: 0 20px;
   border-top: 1px solid @light-grey-2;
 
   @media (min-width: @tablet-width) {
-    // width: 708px;
+    width: 708px;
     padding: 0 30px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    // width: 1220px;
+    width: 1220px;
     margin: 0;
+    padding: 0 110px;
+  }
+}
+
+.form-order__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  // padding: 27px 20px 32px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 708px;
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0;
+    margin-bottom: 81px;
     padding: 0 110px;
   }
 }
