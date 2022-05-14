@@ -6,6 +6,21 @@
   align-items: center;
 }
 
+@media (min-width: @tablet-width) {
+  .range__button .range__text {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+  }
+}
+
+.range__button:hover span,
+.range__button:focus span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.range__button:active span {
+  border: none;
+}
+
 .range__text {
   display: inline-block;
   font-size: 16px;
@@ -55,6 +70,17 @@
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.range__toggle:hover,
+.range__toggle:focus {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.range__toggle:active {
+  border: 1px solid @basic_green;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .range__toggle::before {
