@@ -1,12 +1,13 @@
 // example
 
 .example {
-  background-color: #eaeaea;
+  background-color: @special-grey-4;
 
   @media (min-width: @tablet-width) {
     padding-top: 43px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, @background-color, @background-color 213px, @basic-grey 213px, @basic-grey);
+    // background-image: linear-gradient(to bottom, @background-color, @background-color 213px, @basic-grey 213px, @basic-grey);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 619px, #f2f2f2 619px, #f2f2f2);
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +36,11 @@
   // margin-bottom: 20px;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 43px;
+  }
 }
 
 .example__title {
@@ -74,20 +80,53 @@
   padding-top: 15px;
   // padding-bottom: 0;
   text-align: center;
-  border: 1px solid rgb(0, 0, 0);
+  // border: 1px solid rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
 .example__number {
+  position: relative;
+  padding: 15px 10px;
   margin-bottom: 7px;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid @special_grey;
+  border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    // margin-bottom: 11px;
+    // padding-bottom: 19px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
-  margin: 0;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 12px;
   line-height: 12px;
+  background-color: @special-grey-4;
+  transform: translateY(-18px);
+
+  @media (min-width: @tablet-width) {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @background-color;
+    transform: translateY(-18px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-grey;
+  }
 }
 
 .example__result {
@@ -115,17 +154,6 @@
     padding: 0 30px;
     padding-bottom: 58px;
   }
-
-  .example__history-wrapper {
-    padding-top: 43px;
-    // padding-bottom: 56px;
-  }
-
-  // .example__title {
-  //   margin-bottom: 63px;
-  //   font-size: 60px;
-  //   line-height: 60px;
-  // }
 
   .example__text {
     margin-bottom: 54px;
@@ -155,11 +183,11 @@
     padding: 0;
   }
 
-  .example__number {
-    margin-bottom: 11px;
-    font-size: 30px;
-    line-height: 37px;
-  }
+  // .example__number {
+  //   margin-bottom: 11px;
+  //   font-size: 30px;
+  //   line-height: 37px;
+  // }
 
   .example__result {
     margin: 0;
