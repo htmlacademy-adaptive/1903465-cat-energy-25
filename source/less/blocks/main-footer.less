@@ -7,17 +7,28 @@
 .main-footer__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 39px 20px 22px;
+  padding: 43px 20px 22px;
 }
 
-.main-footer__logo {
+.main-footer__logo-link {
   display: block;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 9px;
+  // border-bottom: 1px solid @light-grey-2;
 }
 
+.main-footer__logo-link:hover .main-footer__logo-image {
+  opacity: 0.8;
+}
+
+.main-footer__logo-link:active .main-footer__logo-image {
+  opacity: 0.6;
+}
+
+
 .main-footer__logo-image {
-  display: block;
+  // display: block;
+  margin: auto;
 }
 
 .main-footer__copyright {
@@ -30,17 +41,18 @@
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    width: 708px;
-    padding: 58px 30px 55px;
+    align-items: center;
+    width: 709px;
+    padding: 32px 30px 18px;
   }
 
-  .main-footer__logo {
+  .main-footer__logo-link {
     margin: 0;
   }
 
   .main-footer__copyright {
-    width: 163px;
+    width: 166px;
+    margin-top: -2px;
   }
 }
 

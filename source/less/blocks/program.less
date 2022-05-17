@@ -8,8 +8,9 @@
 
 .program__subtitle {
   margin: 0;
-  margin-bottom: 29px;
-  margin-left: 69px;
+  margin-top: 5px;
+  margin-bottom: 32px;
+  margin-left: 70px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -18,17 +19,26 @@
 }
 
 .program__link {
-  display: block;
-  width: 134px;
-  padding: 4px;
-  padding-right: 53px;
+  display: inline-block;
+  // width: 134px;
+  padding: 4px 0;
+  padding-right: 56px;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
-  background-image: url("../img/icon-arrow-mobile.svg");
+  background-image: url("../img/icons/icon-arrow-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 61% 47%;
+  background-position: 93% 47%;
+}
+
+.program__link:hover,
+.program__link:active {
+  background-image: url("../img/icons/icon-arrow-long.svg");
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 .program__list {
@@ -39,17 +49,20 @@
 
 .program__item {
   position: relative;
-  margin-bottom: 20px;
-  padding: 22px;
+  margin-bottom: 19px;
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  padding-left: 21px;
   box-sizing: border-box;
-  background-color: @basic_grey;
+  background-color: @basic-grey;
 }
 
 .program__item::before {
   position: absolute;
   content: "";
   background-color: @basic_green;
-  width: 50px;
+  width: 53px;
   height: 50px;
   border-radius: 50%;
 }
@@ -58,19 +71,25 @@
   position: absolute;
   content: url("../img/cat-slim-mobile.svg");
   top: 20px;
-  left: 28px;
+  left: 29px;
 }
 
 .program__item--pro::after {
   position: absolute;
   content: url("../img/cat-pro-mobile.svg");
-  top: 28px;
-  left: 10px;
+  top: 36px;
+  left: 14px;
 }
 
 .program__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 14px;
+  padding-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  border-bottom: 1px solid @light-grey-2;
 }
 
 @media (min-width: @tablet-width) {
@@ -80,6 +99,12 @@
     padding: 0 30px;
     right: 62px;
     top: 92px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 130px 12px;
   }
 
   .program__subtitle {
@@ -106,15 +131,15 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: 81px;
+    top: 91px;
     right: 62px;
   }
 
   .program__item--slim::after {
     content: url("../img/cat-slim-tablet.svg");
-    top: 81px;
+    top: 80px;
     left: auto;
-    right: 80px;
+    right: 93px;
   }
 
   .program__item--pro::after {
@@ -128,6 +153,9 @@
     // width: 340px;
     margin-bottom: 48px;
     padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
   }
 }
 
