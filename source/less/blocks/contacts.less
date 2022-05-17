@@ -36,7 +36,17 @@
 .contacts__description {
   width: 139px;
   margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    padding-top: 4px;
+    padding-right: 41px;
+    font-size: 16px;
+    text-align: end;
+  }
 }
 
 .contacts__map-wrapper {
@@ -66,6 +76,17 @@
     width: 172px;
     font-size: 20px;
     line-height: 26px;
+    padding-top: 6px;
+    padding-left: 39px;
+  }
+
+  .contacts__description-address {
+    display: block;
+  }
+
+  .contacts__description-city {
+    display: block;
+    padding-top: 20px;
   }
 
   .contacts__map-wrapper iframe {
